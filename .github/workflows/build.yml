@@ -16,13 +16,15 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '10.0.x'
+        dotnet-version: '8.0.x'
 
-    - name: Restore dependencies
-      run: dotnet restore RfidAccessControl.sln
+    - name: Restore API & Test Dependencies
+      run: |
+        dotnet restore RfidAccessControl.Api/RfidAccessControl.Api.csproj
+        dotnet restore RfidAccessControl.Tests/RfidAccessControl.Tests.csproj
 
     - name: Build API
-      run: dotnet build RfidAccessControl.Api/RfidAccessControl.Api.csproj --configuration Release
+      run: dotnet build RfidAccessControl.Api/RfidAccessControl.Api.csproj --configuration Release --no-restore
 
     - name: Run Unit Tests
-      run: dotnet test RfidAccessControl.Tests/RfidAccessControl.Tests.csproj --verbosity normal
+      run: dotnet test RfidAccessControl.Tests/RfidAccessControl.Tests.csproj --no-restore --verbosity normal
