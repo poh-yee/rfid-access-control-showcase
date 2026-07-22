@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RfidAccessControl.Desktop.MainPage"
+             Title="RFID Access Control System">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30" HorizontalOptions="Center">
+
+            <Label Text="RFID Access Scanner"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <!-- Using Border instead of obsolete Frame -->
+            <Border Padding="20" StrokeShape="RoundRectangle 10">
+                <VerticalStackLayout Spacing="15" WidthRequest="320">
+                    <Label Text="Scan or Type RFID Tag ID:" FontSize="14" />
+                    
+                    <Entry x:Name="TagIdEntry"
+                           Placeholder="e.g. TAG-1001"
+                           FontSize="16" />
+
+                    <Button Text="Tap Card / Scan"
+                            Clicked="OnScanClicked"
+                            BackgroundColor="#512BD4"
+                            TextColor="White"
+                            CornerRadius="8" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Label x:Name="ResultLabel"
+                   FontSize="18"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="Gray"
+                   Text="Awaiting scan..." />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

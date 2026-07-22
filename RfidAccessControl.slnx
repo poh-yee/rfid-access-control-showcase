@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="RfidAccessControl.Api/RfidAccessControl.Api.csproj" />
+  <Project Path="RfidAccessControl.Desktop/RfidAccessControl.Desktop.csproj" />
+  <Project Path="RfidAccessControl.Tests/RfidAccessControl.Tests.csproj" />
+</Solution>
