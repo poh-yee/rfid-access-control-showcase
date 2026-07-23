@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RfidAccessControl.Desktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+97b6980870f2528f93121e5bf0b504c34b0822b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("RfidAccessControl.Desktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RfidAccessControl.Desktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RfidAccessControl.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f46fe18c9044196c229c05c740cb9698b1f97db5")]
 [assembly: System.Reflection.AssemblyProductAttribute("RfidAccessControl.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RfidAccessControl.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
