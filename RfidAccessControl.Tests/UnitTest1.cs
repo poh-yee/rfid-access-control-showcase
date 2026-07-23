@@ -15,7 +15,7 @@ public class AccessControlTests
         bool canAccess = !string.IsNullOrEmpty(tagId) && isActive;
 
         // Assert
-        Assert.False(canAccess, "Active user with valid tag should be granted access.");
+        Assert.True(canAccess, "Active user with valid tag should be granted access.");
     }
 
     [Fact]
