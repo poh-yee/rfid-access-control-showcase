@@ -1,4 +1,4 @@
-# 🛡️ RFID Access Control Showcase
+# 🛡️ RFID Access Control
 
 ![.NET Build and Test](https://github.com/poh-yee/rfid-access-control-showcase/actions/workflows/build.yml/badge.svg)
 
@@ -53,6 +53,6 @@ An end-to-end RFID Access Control System featuring a C# ASP.NET Core Web API, a 
 ```bash
    cd RfidAccessControl.Desktop
    dotnet run -f net10.0-windows10.0.19041.0
-
-4. **Optional (Unit Test):**
+   
+ Optional (Unit Test):
    dotnet test RfidAccessControl.Tests
